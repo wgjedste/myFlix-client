@@ -16,7 +16,7 @@ export function RegistrationView(props) {
   <Form>
     {" "}
     <Form.Group controlId="registerUsername">
-       <Form.Label>Username:</Form.Label>
+      <Form.Label>Username:</Form.Label>
       {" "}
       <Form.Control type="text" onChange={(e) => setUsername(e.target.value)} />
       {" "}
