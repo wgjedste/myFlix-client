@@ -48209,26 +48209,34 @@ var MainView = /*#__PURE__*/function (_React$Component) {
       if (movies.length === 0) return /*#__PURE__*/_react.default.createElement("div", {
         className: "main-view"
       });
-      return /*#__PURE__*/_react.default.createElement(_reactBootstrap.Row, {
+      return /*#__PURE__*/_react.default.createElement(Router, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Row, {
         className: "main-view justify-content-md-center"
-      }, selectedMovie ? /*#__PURE__*/_react.default.createElement(_reactBootstrap.Col, {
-        md: 8
-      }, /*#__PURE__*/_react.default.createElement(_movieView.MovieView, {
-        movie: selectedMovie,
-        onBackClick: function onBackClick(newSelectedMovie) {
-          _this3.setSelectedMovie(newSelectedMovie);
+      }, /*#__PURE__*/_react.default.createElement(Route, {
+        exact: true,
+        path: "/",
+        render: function render() {
+          return movies.map(function (m) {
+            return /*#__PURE__*/_react.default.createElement(_reactBootstrap.Col, {
+              md: 3,
+              key: m._id
+            }, /*#__PURE__*/_react.default.createElement(_movieCard.MovieCard, {
+              movie: m
+            }));
+          });
         }
-      })) : movies.map(function (movie) {
-        return /*#__PURE__*/_react.default.createElement(_reactBootstrap.Col, {
-          md: 3
-        }, /*#__PURE__*/_react.default.createElement(_movieCard.MovieCard, {
-          key: movie._id,
-          movie: movie,
-          onMovieClick: function onMovieClick(newSelectedMovie) {
-            _this3.setSelectedMovie(newSelectedMovie);
-          }
-        }));
-      }));
+      }), /*#__PURE__*/_react.default.createElement(Route, {
+        path: "/movies/:movieId",
+        render: function render(_ref) {
+          var match = _ref.match;
+          return /*#__PURE__*/_react.default.createElement(_reactBootstrap.Col, {
+            md: 8
+          }, /*#__PURE__*/_react.default.createElement(_movieView.MovieView, {
+            movie: movies.find(function (m) {
+              return m._id === match.params.movieId;
+            })
+          }));
+        }
+      })));
     }
   }]);
 
@@ -48397,7 +48405,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64371" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53721" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
