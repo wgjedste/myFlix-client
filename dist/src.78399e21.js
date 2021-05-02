@@ -51537,18 +51537,7 @@ var MainView = /*#__PURE__*/function (_React$Component) {
       selectedMovie: null
     };
     return _this;
-  } // componentDidMount(){
-  //   axios.get('https://willsmovies.herokuapp.com/movies')
-  //     .then(response => {
-  //       this.setState({
-  //         movies: response.data
-  //       });
-  //     })
-  //     .catch(error => {
-  //       console.log(error);
-  //     });
-  // }
-
+  }
 
   _createClass(MainView, [{
     key: "setSelectedMovie",
@@ -51807,7 +51796,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53033" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61828" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
