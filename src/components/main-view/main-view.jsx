@@ -11,6 +11,7 @@ import { MovieView } from "../movie-view/movie-view";
 import { Row, Col, Button, Navbar } from "react-bootstrap";
 import { DirectorView } from "../director-view/director-view";
 import { GenreView } from "../genre-view/genre-view";
+import { ProfileView } from "../profile-view/profile-view";
 
 export class MainView extends React.Component {
   constructor() {
@@ -96,6 +97,7 @@ export class MainView extends React.Component {
     return (
       <Router>
         <Navbar
+          bg="dark"
           expand="lg"
           sticky="top"
           variant="dark"
@@ -128,7 +130,7 @@ export class MainView extends React.Component {
               <ul>
                 <Link to={`/`}>
                   <Button
-                    variant="link"
+                    variant="dark"
                     className="navbar-link"
                     onClick={() => this.logOut()}
                   >
@@ -136,17 +138,17 @@ export class MainView extends React.Component {
                   </Button>
                 </Link>
                 <Link to={`/users/${user}`}>
-                  <Button variant="link" className="navbar-link">
+                  <Button variant="dark" className="navbar-link">
                     My Account
                   </Button>
                 </Link>
                 <Link to={`/`}>
-                  <Button variant="link" className="navbar-link">
+                  <Button variant="dark" className="navbar-link">
                     Movies
                   </Button>
                 </Link>
                 <Link to={`/about`}>
-                  <Button variant="link" className="navbar-link">
+                  <Button variant="dark" className="navbar-link">
                     About
                   </Button>
                 </Link>
@@ -209,7 +211,7 @@ export class MainView extends React.Component {
                       (m) => m.Director.Name === match.params.name
                     )}
                     onBackClick={() => window.history.back()}
-                    movies={ movies }
+                    movies={movies}
                   />
                 </Col>
               );
@@ -226,11 +228,16 @@ export class MainView extends React.Component {
                       (m) => m.Genre.Name === match.params.name
                     )}
                     onBackClick={() => window.history.back()}
-                    movies={ movies }
+                    movies={movies}
                   />
                 </Col>
               );
             }}
+          />
+          <Route
+            exact
+            path="/users/:userId"
+            render={() => <ProfileView movies={movies} />}
           />
         </Row>
       </Router>
