@@ -43,7 +43,7 @@ export class DirectorView extends React.Component {
               <span className="value">{director.Director.Death}</span>
             </div>
             <Link to={`/`}>
-              <Button variant="link">Return</Button>
+              <Button variant="link">Movies</Button>
             </Link>
             <button onClick={ onBackClick }>Back</button>
           </Col>

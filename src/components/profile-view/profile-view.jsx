@@ -39,7 +39,7 @@ export class ProfileView extends React.Component {
   getUser(token) {
     //console.log(localStorage.getItem("user"));
     let url =
-      "https://willsmovies.herokuapp.com/" +
+      "https://willsmovies.herokuapp.com/users/" +
       localStorage.getItem("user");
     axios
       .get(url, {
@@ -78,7 +78,7 @@ export class ProfileView extends React.Component {
     let token = localStorage.getItem("token");
     let user = localStorage.getItem("user");
     axios
-      .delete(`https://willsmovies.herokuapp.com/${user}`, {
+      .delete(`https://willsmovies.herokuapp.com/users/${user}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then(() => {
@@ -112,14 +112,17 @@ export class ProfileView extends React.Component {
                   <h3>Username: </h3>
                   <Form.Label>{this.state.username}</Form.Label>
                 </Form.Group>
+               
                 <Form.Group controlId="formBasicEmail">
                   <h3>Email:</h3>
                   <Form.Label>{this.state.email}</Form.Label>
                 </Form.Group>
+
                 <Form.Group controlId="formBasicDate">
                   <h3>Date of Birth:</h3>
                   <Form.Label>{this.state.dob}</Form.Label>
                 </Form.Group>
+
                 <Link to={`/update/${this.state.username}`}>
                   <Button variant="outline-dark" type="link" size="sm" block>
                     Edit Profile

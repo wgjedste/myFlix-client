@@ -12,6 +12,8 @@ import { Row, Col, Button, Navbar } from "react-bootstrap";
 import { DirectorView } from "../director-view/director-view";
 import { GenreView } from "../genre-view/genre-view";
 import { ProfileView } from "../profile-view/profile-view";
+import { UpdateView } from '../update-view/update-view';
+
 
 export class MainView extends React.Component {
   constructor() {
@@ -238,6 +240,12 @@ export class MainView extends React.Component {
             exact
             path="/users/:userId"
             render={() => <ProfileView movies={movies} />}
+          />
+          <Route
+            path="/update/:userId"
+            render={() => {
+              return <UpdateView />;
+            }}
           />
         </Row>
       </Router>
