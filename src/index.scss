@@ -1,5 +1,17 @@
-$color: steelblue;
-
-.my-flix {
-  color: $color;
-}
+:root{
+  // --primary-color:rgb(154, 1, 1);
+  --secondary-color: rgb(0, 177, 0);
+  }
+  
+  .navbar {
+      background-color: var(--primary-color);
+      text-align: inherit;
+      border-radius: 40px;
+  }
+  
+  .navbar-link {
+      background-color: var(--primary-color);
+      text-decoration: none;
+      justify-content: center;
+      border-radius: 10px;
+  }

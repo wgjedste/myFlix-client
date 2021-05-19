@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { setMovies } from '../../actions/actions';
 
 import MoviesList from '../movies-list/movies-list';
-
+import './main-view.scss'; 
 import { LoginView } from "../login-view/login-view";
 import { RegistrationView } from "../registration-view/registration-view";
 import { MovieCard } from "../movie-card/movie-card";

@@ -1,5 +1,40 @@
-.my-flix {
-  color: steelblue;
+:root {
+  --secondary-color: rgb(0, 177, 0);
+  --box-color: rgb(108, 108, 108);
+}
+
+h1 {
+  width: 350px;
+  padding: 10px;
+  border: 1px solid var(--box-color);
+  text-align: center;
+}
+
+h3 {
+  border: 1px solid var(--box-color);
+  width: 350px;
+  text-align: center;
+}
+
+.button {
+  background-color: var(--box-color);
+  width: 350px;
+}
+:root {
+  --secondary-color: rgb(0, 177, 0);
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  text-align: inherit;
+  border-radius: 40px;
+}
+
+.navbar-link {
+  background-color: var(--primary-color);
+  text-decoration: none;
+  justify-content: center;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=/src.78399e21.css.map */

@@ -106,35 +106,36 @@ export class ProfileView extends React.Component {
         <Container>
           <Row>
             <Col>
-              <Form style={{ width: "24rem", float: "left" }}>
+              <Form style={{ width: "24rem", float: "center" }}>
                 <h1 style={{ textAlign: "center" }}>Profile Details</h1>
                 <Form.Group controlId="formBasicUsername">
-                  <h3>Username: </h3>
+                  <h3 style={{ textAlign: "center" }}>Username: </h3>
                   <Form.Label>{this.state.username}</Form.Label>
                 </Form.Group>
                
                 <Form.Group controlId="formBasicEmail">
-                  <h3>Email:</h3>
+                  <h3 style={{ textAlign: "center" }}>Email:</h3>
                   <Form.Label>{this.state.email}</Form.Label>
                 </Form.Group>
 
                 <Form.Group controlId="formBasicDate">
-                  <h3>Date of Birth:</h3>
+                  <h3 style={{ textAlign: "center" }}>Date of Birth:</h3>
                   <Form.Label>{this.state.dob}</Form.Label>
                 </Form.Group>
 
                 <Link to={`/update/${this.state.username}`}>
-                  <Button variant="outline-dark" type="link" size="sm" block>
+                  <Button className="button" variant="outline-light" type="link" size="sm" block>
                     Edit Profile
                   </Button>
                 </Link>
                 <Link to={`/`}>
-                  <Button variant="outline-dark" type="submit" size="sm" block>
+                  <Button className="button" variant="outline-light" type="submit" size="sm" block>
                     Back to Main
                   </Button>
                 </Link>
                 <Button
-                  variant="outline-danger"
+                  className="button"
+                  variant="dark"
                   size="sm"
                   block
                   onClick={() => this.handleDelete()}

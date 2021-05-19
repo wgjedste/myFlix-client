@@ -1,0 +1,23 @@
+:root{
+    --secondary-color: rgb(0, 177, 0);
+    --box-color: rgb(108, 108, 108);
+    }
+
+h1 {
+    width: 350px;
+    padding: 10px;
+    border: 1px solid var(--box-color);
+    text-align: center;
+}
+
+h3 {
+    border: 1px solid var(--box-color);
+    width: 350px;
+    text-align: center;
+    }
+
+
+.button {
+    background-color: var(--box-color);
+    width: 350px;
+}
