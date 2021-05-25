@@ -40187,7 +40187,12 @@ function RegistrationView(props) {
 }
 
 ;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","react-bootstrap/Form":"../node_modules/react-bootstrap/esm/Form.js","react-bootstrap/Button":"../node_modules/react-bootstrap/esm/Button.js","react-bootstrap/Container":"../node_modules/react-bootstrap/esm/Container.js","./registration-view.scss":"components/registration-view/registration-view.scss","axios":"../node_modules/axios/index.js"}],"../node_modules/invariant/browser.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","react-bootstrap/Form":"../node_modules/react-bootstrap/esm/Form.js","react-bootstrap/Button":"../node_modules/react-bootstrap/esm/Button.js","react-bootstrap/Container":"../node_modules/react-bootstrap/esm/Container.js","./registration-view.scss":"components/registration-view/registration-view.scss","axios":"../node_modules/axios/index.js"}],"components/movie-view/movie-view.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../../../../../../../.nvm/versions/node/v14.15.1/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/invariant/browser.js":[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -53862,6 +53867,8 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactRouterDom = require("react-router-dom");
 
+require("./movie-view.scss");
+
 var _reactBootstrap = require("react-bootstrap");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -53905,20 +53912,18 @@ var MovieView = /*#__PURE__*/function (_React$Component) {
       var _this$props = this.props,
           movie = _this$props.movie,
           onBackClick = _this$props.onBackClick;
-      return /*#__PURE__*/_react.default.createElement("div", {
-        className: "movie-view"
-      }, /*#__PURE__*/_react.default.createElement("div", {
-        className: "movie-poster"
+      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
+        className: "movie-view-column"
       }, /*#__PURE__*/_react.default.createElement("img", {
         src: movie.ImagePath
       })), /*#__PURE__*/_react.default.createElement("div", {
-        className: "movie-title"
+        className: "movie-view-column"
       }, /*#__PURE__*/_react.default.createElement("span", {
         className: "label"
       }, "Title: "), /*#__PURE__*/_react.default.createElement("span", {
         className: "value"
       }, movie.Title)), /*#__PURE__*/_react.default.createElement("div", {
-        className: "movie-description"
+        className: "movie-view-column"
       }, /*#__PURE__*/_react.default.createElement("span", {
         className: "label"
       }, "Description: "), /*#__PURE__*/_react.default.createElement("span", {
@@ -53939,7 +53944,7 @@ var MovieView = /*#__PURE__*/function (_React$Component) {
 }(_react.default.Component);
 
 exports.MovieView = MovieView;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","react-bootstrap":"../node_modules/react-bootstrap/esm/index.js"}],"components/director-view/director-view.scss":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./movie-view.scss":"components/movie-view/movie-view.scss","react-bootstrap":"../node_modules/react-bootstrap/esm/index.js"}],"components/director-view/director-view.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -54018,7 +54023,7 @@ var DirectorView = /*#__PURE__*/function (_React$Component) {
           onBackClick = _this$props.onBackClick;
       if (!director) return null;
       return /*#__PURE__*/_react.default.createElement(_Container.default, {
-        className: "wrapper container-fluid"
+        className: " container-fluid"
       }, /*#__PURE__*/_react.default.createElement(_Row.default, null, /*#__PURE__*/_react.default.createElement(_Col.default, {
         className: "col-3"
       }), /*#__PURE__*/_react.default.createElement(_Col.default, {
@@ -54064,7 +54069,7 @@ var DirectorView = /*#__PURE__*/function (_React$Component) {
           return /*#__PURE__*/_react.default.createElement("div", {
             key: movie._id
           }, /*#__PURE__*/_react.default.createElement(_Card.default, {
-            className: "mb-3 mr-2 h-100",
+            className: "movie-poster-director mb-3 mr-2 h-100",
             style: {
               width: '16rem'
             }
@@ -54406,16 +54411,18 @@ var ProfileView = /*#__PURE__*/function (_React$Component) {
 
       if (!movies) alert("Please sign in");
       return /*#__PURE__*/_react.default.createElement("div", {
-        className: "userProfile",
+        className: "profile-view-container",
         style: {
           display: "flex"
         }
       }, /*#__PURE__*/_react.default.createElement(_Container.default, null, /*#__PURE__*/_react.default.createElement(_Row.default, null, /*#__PURE__*/_react.default.createElement(_Col.default, null, /*#__PURE__*/_react.default.createElement(_Form.default, {
+        className: "profile-view-form",
         style: {
           width: "24rem",
           float: "center"
         }
       }, /*#__PURE__*/_react.default.createElement("h1", {
+        className: "profile-view-card",
         style: {
           textAlign: "center"
         }
@@ -54440,7 +54447,7 @@ var ProfileView = /*#__PURE__*/function (_React$Component) {
       }, "Date of Birth:"), /*#__PURE__*/_react.default.createElement(_Form.default.Label, null, this.state.dob)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
         to: "/update/".concat(this.state.username)
       }, /*#__PURE__*/_react.default.createElement(_Button.default, {
-        className: "button",
+        className: "profile-view-button",
         variant: "outline-light",
         type: "link",
         size: "sm",
@@ -54448,13 +54455,13 @@ var ProfileView = /*#__PURE__*/function (_React$Component) {
       }, "Edit Profile")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
         to: "/"
       }, /*#__PURE__*/_react.default.createElement(_Button.default, {
-        className: "button",
+        className: "profile-view-button",
         variant: "outline-light",
         type: "submit",
         size: "sm",
         block: true
       }, "Back to Main")), /*#__PURE__*/_react.default.createElement(_Button.default, {
-        className: "button",
+        className: "profile-view-button",
         variant: "dark",
         size: "sm",
         block: true,
@@ -54730,7 +54737,11 @@ var About = /*#__PURE__*/function (_Component) {
   _createClass(About, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, "This is the about page"));
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "about-card"
+      }, /*#__PURE__*/_react.default.createElement("h1", {
+        className: "about-card-view"
+      }, "This is the about page"));
     }
   }]);
 
@@ -54983,16 +54994,19 @@ var MainView = /*#__PURE__*/function (_React$Component) {
         render: function render(_ref) {
           var match = _ref.match,
               history = _ref.history;
-          return /*#__PURE__*/_react.default.createElement(_reactBootstrap.Col, {
-            md: 8
-          }, /*#__PURE__*/_react.default.createElement(_movieView.MovieView, {
-            movie: movies.find(function (m) {
-              return m._id === match.params.movieId;
-            }),
-            onBackClick: function onBackClick() {
-              return history.goBack();
-            }
-          }));
+          return (
+            /*#__PURE__*/
+            // <Col md={8}>
+            _react.default.createElement(_movieView.MovieView, {
+              movie: movies.find(function (m) {
+                return m._id === match.params.movieId;
+              }),
+              onBackClick: function onBackClick() {
+                return history.goBack();
+              }
+            }) // </Col>
+
+          );
         }
       }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
         path: "/directors/:name",
@@ -55174,7 +55188,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56862" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63427" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

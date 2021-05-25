@@ -21,7 +21,7 @@ export class DirectorView extends React.Component {
     if (!director) return null;
 
     return (
-      <Container className="wrapper container-fluid">
+      <Container className=" container-fluid">
         <Row>
           <Col className="col-3" />
           <Col className="director-view container-fluid align-items-center col-6">
@@ -57,7 +57,7 @@ export class DirectorView extends React.Component {
                 return (
                   <div key={movie._id}>
                     <Card
-                      className="mb-3 mr-2 h-100"
+                      className="movie-poster-director mb-3 mr-2 h-100"
                       style={{ width: '16rem' }}
                     >
                       <Card.Img variant="top" src={movie.ImagePath} />

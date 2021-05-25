@@ -1,17 +1,16 @@
 :root{
-  // --primary-color:rgb(154, 1, 1);
-  --secondary-color: rgb(0, 177, 0);
+//   --primary-color:rgb(154, 1, 1);
+//   --secondary-color: rgb(0, 177, 0);
   }
   
   .navbar {
-      background-color: var(--primary-color);
-      text-align: inherit;
-      border-radius: 40px;
+    border-radius: 40px;
+    height: 60px;
+    text-orientation: center;
   }
   
   .navbar-link {
-      background-color: var(--primary-color);
-      text-decoration: none;
-      justify-content: center;
-      border-radius: 10px;
+    padding-top: 20px;
+    text-align: center;
+    position: static;
   }

@@ -102,12 +102,12 @@ export class ProfileView extends React.Component {
 
     if (!movies) alert("Please sign in");
     return (
-      <div className="userProfile" style={{ display: "flex" }}>
+      <div className="profile-view-container" style={{ display: "flex" }}>
         <Container>
           <Row>
             <Col>
-              <Form style={{ width: "24rem", float: "center" }}>
-                <h1 style={{ textAlign: "center" }}>Profile Details</h1>
+              <Form className="profile-view-form" style={{ width: "24rem", float: "center" }}>
+                <h1 className="profile-view-card" style={{ textAlign: "center" }}>Profile Details</h1>
                 <Form.Group controlId="formBasicUsername">
                   <h3 style={{ textAlign: "center" }}>Username: </h3>
                   <Form.Label>{this.state.username}</Form.Label>
@@ -124,17 +124,17 @@ export class ProfileView extends React.Component {
                 </Form.Group>
 
                 <Link to={`/update/${this.state.username}`}>
-                  <Button className="button" variant="outline-light" type="link" size="sm" block>
+                  <Button className="profile-view-button" variant="outline-light" type="link" size="sm" block>
                     Edit Profile
                   </Button>
                 </Link>
                 <Link to={`/`}>
-                  <Button className="button" variant="outline-light" type="submit" size="sm" block>
+                  <Button className="profile-view-button" variant="outline-light" type="submit" size="sm" block>
                     Back to Main
                   </Button>
                 </Link>
                 <Button
-                  className="button"
+                  className="profile-view-button"
                   variant="dark"
                   size="sm"
                   block

@@ -3,21 +3,46 @@
     --box-color: rgb(108, 108, 108);
     }
 
-h1 {
-    width: 350px;
-    padding: 10px;
-    border: 1px solid var(--box-color);
-    text-align: center;
+body {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+
 }
 
+.profile-view-container {
+    background-color: white;
+    width: 35%;
+    height: 50%;
+    display: flex;
+   }
+
+
+.profile-view-card {
+    width: 350px;
+    border: 1px solid var(--box-color);
+    text-align: center;
+    border-radius: 20px;
+} 
+
+
+// .profile-view-form {
+   
+// }
+
+
+.profile-view-button {
+    background-color: var(--box-color);
+    display: flex;
+    width: 350px;  
+    text-align: center; 
+}
+
+
 h3 {
+    display: inline-block;
     border: 1px solid var(--box-color);
     width: 350px;
     text-align: center;
     }
 
 
-.button {
-    background-color: var(--box-color);
-    width: 350px;
-}
+

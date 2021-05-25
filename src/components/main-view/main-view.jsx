@@ -204,12 +204,12 @@ import { About } from '../about/about';
             path="/movies/:movieId"
             render={({ match, history }) => {
               return (
-                <Col md={8}>
+                // <Col md={8}>
                   <MovieView
                     movie={movies.find((m) => m._id === match.params.movieId)}
                     onBackClick={() => history.goBack()}
                   />
-                </Col>
+                // </Col>
               );
             }}
           />

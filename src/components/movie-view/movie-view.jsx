@@ -1,25 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { Button } from "react-bootstrap"
+import "./movie-view.scss"
+
+import { Button, Col } from "react-bootstrap"
 
 export class MovieView extends React.Component {
   render() {
     const { movie, onBackClick } = this.props;
 
     return (
-      <div className="movie-view">
-        <div className="movie-poster">
+
+      <div>
+        <div className="movie-view-column">
           <img src={movie.ImagePath} />
-        </div>
-        <div className="movie-title">
+        </div >
+        <div className="movie-view-column" >
           <span className="label">Title: </span>
           <span className="value">{movie.Title}</span>
-        </div>
-        <div className="movie-description">
+        </div >
+        <div className="movie-view-column" >
           <span className="label">Description: </span>
           <span className="value">{movie.Description}</span>
-        </div>
+        </div >
 
         <Link to={`/directors/${movie.Director.Name}`}>
           <Button variant="link">Director</Button>
