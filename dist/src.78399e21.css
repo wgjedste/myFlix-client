@@ -7,7 +7,7 @@
 }
 
 img:hover {
-  transform: scale(1.2);
+  transform: scale(0.2);
 }
 .movie-poster-director {
   vertical-align: middle;

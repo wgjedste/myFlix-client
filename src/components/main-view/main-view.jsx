@@ -109,66 +109,68 @@ import { About } from '../about/about';
 
     return (
       <Router>
-        <Navbar
-          bg="dark"
-          expand="lg"
-          sticky="top"
-          variant="dark"
-          expand="lg"
-          className="navbar shadow-sm mb-5"
-        >
-          <Navbar.Brand href="http://localhost:1234" className="navbar-brand">
-            FlixNET
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse
-            className="justify-content-end"
-            id="basic-navbar-nav"
+        <div className="navbar-container">
+          <Navbar
+            bg="dark"
+            expand="lg"
+            sticky="top"
+            variant="dark"
+            expand="lg"
+            className="navbar shadow-sm mb-5"
           >
-            {/* <VisibilityFilterInput visibilityFilter={visibilityFilter} /> */}
-            {!user ? (
-              <ul>
-                <Link to={`/`}>
-                  <Button variant="link" className="navbar-link">
-                    Sign In
-                  </Button>
-                </Link>
-                <Link to={`/register`}>
-                  <Button variant="link" className="navbar-link">
-                    Register
-                  </Button>
-                </Link>
-              </ul>
-            ) : (
-              <ul>
-                <Link to={`/`}>
-                  <Button
-                    variant="dark"
-                    className="navbar-link"
-                    onClick={() => this.logOut()}
-                  >
-                    Sign Out
-                  </Button>
-                </Link>
-                <Link to={`/users/${user}`}>
-                  <Button variant="dark" className="navbar-link">
-                    My Account
-                  </Button>
-                </Link>
-                <Link to={`/`}>
-                  <Button variant="dark" className="navbar-link">
-                    Movies
-                  </Button>
-                </Link>
-                <Link to={`/about`}>
-                  <Button variant="dark" className="navbar-link">
-                    About
-                  </Button>
-                </Link>
-              </ul>
-            )}
-          </Navbar.Collapse>
-        </Navbar>
+            <Navbar.Brand href="http://localhost:1234" className="navbar-brand">
+              FlixNET
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse
+              className="justify-content-end"
+              id="basic-navbar-nav"
+            >
+              {/* <VisibilityFilterInput visibilityFilter={visibilityFilter} /> */}
+              {!user ? (
+                <ul>
+                  <Link to={`/`}>
+                    <Button variant="link" className="navbar-link">
+                      Sign In
+                    </Button>
+                  </Link>
+                  <Link to={`/register`}>
+                    <Button variant="link" className="navbar-link">
+                      Register
+                    </Button>
+                  </Link>
+                </ul>
+              ) : (
+                <ul>
+                  <Link to={`/`}>
+                    <Button
+                      variant="dark"
+                      className="navbar-link"
+                      onClick={() => this.logOut()}
+                    >
+                      Sign Out
+                    </Button>
+                  </Link>
+                  <Link to={`/users/${user}`}>
+                    <Button variant="dark" className="navbar-link">
+                      My Account
+                    </Button>
+                  </Link>
+                  <Link to={`/`}>
+                    <Button variant="dark" className="navbar-link">
+                      Movies
+                    </Button>
+                  </Link>
+                  <Link to={`/about`}>
+                    <Button variant="dark" className="navbar-link">
+                      About
+                    </Button>
+                  </Link>
+                </ul>
+              )}
+            </Navbar.Collapse>
+          </Navbar>
+        </div>
         <Row className="main-view justify-content-md-center">
           <Route
             exact

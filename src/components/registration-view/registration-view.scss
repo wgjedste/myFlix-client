@@ -1,0 +1,10 @@
+:root{
+    --primary-color: red; 
+}
+
+.register-heading{ 
+    display: flex;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    justify-content: center;
+}
