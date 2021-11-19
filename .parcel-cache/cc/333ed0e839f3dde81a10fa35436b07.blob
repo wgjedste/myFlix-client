@@ -1,7 +1,0 @@
-:root {
-  --primary-color: red;
-}
-
-.register-heading {
-  background-color: var(--primary-color);
-}

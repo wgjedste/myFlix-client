@@ -1,4 +1,0 @@
-.navbar-link {
-  display: flex;
-  justify-content: center;
-}

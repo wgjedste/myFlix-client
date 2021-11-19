@@ -1,8 +1,0 @@
-.movie-poster-director {
-  vertical-align: middle;
-}
-
-.director-title {
-  vertical-align: middle;
-  position: relative;
-}

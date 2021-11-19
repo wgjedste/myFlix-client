@@ -1,5 +1,0 @@
-.navbar {
-  display: flex;
-  background-color: red;
-  margin-bottom: 5rem;
-}
