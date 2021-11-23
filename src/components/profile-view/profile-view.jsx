@@ -144,34 +144,7 @@ export class ProfileView extends React.Component {
                 </Button>
               </Form>
             </Col>
-            {/* <Col>
-              <div
-                className="favoriteMovies"
-                style={{
-                  float: "right",
-                  textAlign: "center",
-                  width: "24rem",
-                }}
-              >
-                <h1>Favorite Movies</h1>
-                {favoriteMovieList.map((movie) => {
-                  return (
-                    <div key={movie._id}>
-                      <Card>
-                        <Card.Body>
-                          <Link to={`/movies/${movie._id}`}>
-                            <Card.Title>{movie.Title}</Card.Title>
-                          </Link>
-                        </Card.Body>
-                      </Card>
-                      <Button onClick={() => this.removeFavorite(movie)}>
-                        Remove
-                      </Button>
-                    </div>
-                  );
-                })}
-              </div>
-            </Col> */}
+            
           </Row>
         </Container>
       </div>

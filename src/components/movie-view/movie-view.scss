@@ -1,34 +1,12 @@
-.movie-view-column {
-    display: inline-block;
-    width: 33%;
+.main-view {
+    display: flex;
+    margin-top: 5rem;
+    gap: 1rem;
     img {
             transition: transform .5s;
         }
     }
         
         img:hover {
-        transform: scale(.2);
+        transform: scale(1.1);
 }
-
-
-// // .movie-view {
-// //     display: inline-block;
-// //     font-size: 20px;
-// // }
-
-// .movie-poster {
-//     width: fit-content;
-//     border:2px solid black;
-//     box-shadow: 10px 5px rgb(218, 218, 218);
-// img {
-//     transition: transform .5s;
-// }
-
-// img:hover {
-//   transform: scale(1.2);
-// }
-// }
-
-// .label, .value {
-//     position: relative;
-// }

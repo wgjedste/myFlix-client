@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
 :root{
+    --primary-color: white;
     --secondary-color: rgb(0, 177, 0);
     --box-color: rgb(108, 108, 108);
     }
 
 body {
-    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
-
+    background-color: var(--primary-color);
+    font-family: 'EB Garamond', serif;
 }
 
 .profile-view-container {
@@ -23,10 +26,6 @@ body {
     border-radius: 20px;
 } 
 
-
-// .profile-view-form {
-   
-// }
 
 
 .profile-view-button {

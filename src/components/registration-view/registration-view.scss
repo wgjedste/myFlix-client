@@ -1,10 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
 :root{
-    --primary-color: red; 
-}
+    --primary-color: white;
+    --secondary-color: rgb(0, 177, 0);
+    --box-color: rgb(108, 108, 108);
+    }
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'EB Garamond', serif;
+} 
+
 
 .register-heading{ 
     display: flex;
-    background-color: var(--primary-color);
+    background-color: var(--box-color);
     border-radius: 15px;
     justify-content: center;
 }

@@ -110,14 +110,7 @@ import { About } from '../about/about';
     return (
       <Router>
         <div className="navbar-container">
-          <Navbar
-            bg="dark"
-            expand="lg"
-            sticky="top"
-            variant="dark"
-            expand="lg"
-            className="navbar shadow-sm mb-5"
-          >
+          <Navbar>
             <Navbar.Brand href="http://localhost:1234" className="navbar-brand">
               FlixNET
             </Navbar.Brand>
@@ -126,45 +119,43 @@ import { About } from '../about/about';
               className="justify-content-end"
               id="basic-navbar-nav"
             >
-              {/* <VisibilityFilterInput visibilityFilter={visibilityFilter} /> */}
               {!user ? (
                 <ul>
                   <Link to={`/`}>
-                    <Button variant="link" className="navbar-link">
+                    <li variant="link" className="navbar-link">
                       Sign In
-                    </Button>
+                    </li>
                   </Link>
                   <Link to={`/register`}>
-                    <Button variant="link" className="navbar-link">
+                    <li variant="link" className="navbar-link">
                       Register
-                    </Button>
+                    </li>
                   </Link>
                 </ul>
               ) : (
                 <ul>
                   <Link to={`/`}>
-                    <Button
-                      variant="dark"
+                    <li
                       className="navbar-link"
                       onClick={() => this.logOut()}
                     >
                       Sign Out
-                    </Button>
+                    </li>
                   </Link>
                   <Link to={`/users/${user}`}>
-                    <Button variant="dark" className="navbar-link">
+                    <li className="navbar-link">
                       My Account
-                    </Button>
+                    </li>
                   </Link>
                   <Link to={`/`}>
-                    <Button variant="dark" className="navbar-link">
+                    <li className="navbar-link">
                       Movies
-                    </Button>
+                    </li>
                   </Link>
                   <Link to={`/about`}>
-                    <Button variant="dark" className="navbar-link">
+                    <li className="navbar-link">
                       About
-                    </Button>
+                    </li>
                   </Link>
                 </ul>
               )}
@@ -183,11 +174,7 @@ import { About } from '../about/about';
                   </Col>
                 );
                 return <MoviesList movies={movies}/>;
-              // return movies.map((m) => (
-              //   <Col md={3} key={m._id}>
-              //     <MovieCard movie={m} />
-              //   </Col>
-              // ));
+          
             }}
           />
           <Route
@@ -221,7 +208,7 @@ import { About } from '../about/about';
             render={({ match }) => {
               if (movies.length === 0) return <div className="main-view" />;
               return (
-                <Col md={8}>
+                <Col md={1}>
                   <DirectorView
                     director={movies.find(
                       (m) => m.Director.Name === match.params.name
@@ -238,7 +225,7 @@ import { About } from '../about/about';
             render={({ match }) => {
               if (movies.length === 0) return <div className="main-view" />;
               return (
-                <Col md={8}>
+                <Col md={1}>
                   <GenreView
                     genre={movies.find(
                       (m) => m.Genre.Name === match.params.name

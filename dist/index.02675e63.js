@@ -740,9 +740,9 @@ if ("development" !== "production") {
   })();
 }
 
-},{}],"68WUB":[function(require,module,exports) {
+},{}],"1eyTa":[function(require,module,exports) {
 var HMR_HOST = null;
-var HMR_PORT = 1234;
+var HMR_PORT = 52018;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d751713988987e9331980363e24189ce";
 module.bundle.HMR_BUNDLE_ID = "f9eab60bc3a7a7c3f683683702675e63";
@@ -1103,7 +1103,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","react-dom":"2sg1U","react-bootstrap/Container":"3Mt3t","redux":"7panR","react-redux":"7GDa4","./reducers/reducers":"2736c","./components/main-view/main-view":"67PhB","./index.scss":"01gjd","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3b2NM":[function(require,module,exports) {
+},{"react":"3b2NM","react-dom":"2sg1U","react-bootstrap/Container":"3Mt3t","redux":"7panR","react-redux":"7GDa4","./reducers/reducers":"2736c","./components/main-view/main-view":"67PhB","./index.scss":"5iJih","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3b2NM":[function(require,module,exports) {
 "use strict";
 if ("development" === 'production') {
   module.exports = require('./cjs/react.production.min.js');
@@ -30025,12 +30025,6 @@ try {
             columnNumber: 9
           }
         }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Navbar, {
-          bg: "dark",
-          expand: "lg",
-          sticky: "top",
-          variant: "dark",
-          expand: "lg",
-          className: "navbar shadow-sm mb-5",
           __self: this,
           __source: {
             fileName: _jsxFileName,
@@ -30043,7 +30037,7 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 121,
+            lineNumber: 114,
             columnNumber: 13
           }
         }, "FlixNET"), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Navbar.Toggle, {
@@ -30051,7 +30045,7 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 124,
+            lineNumber: 117,
             columnNumber: 13
           }
         }), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Navbar.Collapse, {
@@ -30060,14 +30054,14 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 125,
+            lineNumber: 118,
             columnNumber: 13
           }
         }, !user ? /*#__PURE__*/_reactDefault.default.createElement("ul", {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 131,
+            lineNumber: 123,
             columnNumber: 17
           }
         }, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
@@ -30075,16 +30069,16 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 132,
+            lineNumber: 124,
             columnNumber: 19
           }
-        }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Button, {
+        }, /*#__PURE__*/_reactDefault.default.createElement("li", {
           variant: "link",
           className: "navbar-link",
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 133,
+            lineNumber: 125,
             columnNumber: 21
           }
         }, "Sign In")), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
@@ -30092,23 +30086,23 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 137,
+            lineNumber: 129,
             columnNumber: 19
           }
-        }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Button, {
+        }, /*#__PURE__*/_reactDefault.default.createElement("li", {
           variant: "link",
           className: "navbar-link",
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 138,
+            lineNumber: 130,
             columnNumber: 21
           }
         }, "Register"))) : /*#__PURE__*/_reactDefault.default.createElement("ul", {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 144,
+            lineNumber: 136,
             columnNumber: 17
           }
         }, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
@@ -30116,17 +30110,16 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 145,
+            lineNumber: 137,
             columnNumber: 19
           }
-        }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Button, {
-          variant: "dark",
+        }, /*#__PURE__*/_reactDefault.default.createElement("li", {
           className: "navbar-link",
           onClick: () => this.logOut(),
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 146,
+            lineNumber: 138,
             columnNumber: 21
           }
         }, "Sign Out")), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
@@ -30134,16 +30127,15 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 154,
+            lineNumber: 145,
             columnNumber: 19
           }
-        }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Button, {
-          variant: "dark",
+        }, /*#__PURE__*/_reactDefault.default.createElement("li", {
           className: "navbar-link",
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 155,
+            lineNumber: 146,
             columnNumber: 21
           }
         }, "My Account")), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
@@ -30151,16 +30143,15 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 159,
+            lineNumber: 150,
             columnNumber: 19
           }
-        }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Button, {
-          variant: "dark",
+        }, /*#__PURE__*/_reactDefault.default.createElement("li", {
           className: "navbar-link",
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 160,
+            lineNumber: 151,
             columnNumber: 21
           }
         }, "Movies")), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
@@ -30168,16 +30159,15 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 164,
+            lineNumber: 155,
             columnNumber: 19
           }
-        }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Button, {
-          variant: "dark",
+        }, /*#__PURE__*/_reactDefault.default.createElement("li", {
           className: "navbar-link",
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 165,
+            lineNumber: 156,
             columnNumber: 21
           }
         }, "About")))))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
@@ -30185,7 +30175,7 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 174,
+            lineNumber: 165,
             columnNumber: 9
           }
         }, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -30197,7 +30187,7 @@ try {
                 __self: this,
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 181,
+                  lineNumber: 172,
                   columnNumber: 19
                 }
               }, /*#__PURE__*/_reactDefault.default.createElement(_loginViewLoginView.LoginView, {
@@ -30205,7 +30195,7 @@ try {
                 __self: this,
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 182,
+                  lineNumber: 173,
                   columnNumber: 21
                 }
               }))
@@ -30216,7 +30206,7 @@ try {
                 __self: this,
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 185,
+                  lineNumber: 176,
                   columnNumber: 24
                 }
               })
@@ -30225,7 +30215,7 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 175,
+            lineNumber: 166,
             columnNumber: 11
           }
         }), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -30236,14 +30226,14 @@ try {
                 __self: this,
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 197,
+                  lineNumber: 184,
                   columnNumber: 17
                 }
               }, /*#__PURE__*/_reactDefault.default.createElement(_registrationViewRegistrationView.RegistrationView, {
                 __self: this,
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 198,
+                  lineNumber: 185,
                   columnNumber: 19
                 }
               }))
@@ -30252,7 +30242,7 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 193,
+            lineNumber: 180,
             columnNumber: 11
           }
         }), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -30267,7 +30257,7 @@ try {
                 __self: this,
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 210,
+                  lineNumber: 197,
                   columnNumber: 19
                 }
               })
@@ -30276,7 +30266,7 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 205,
+            lineNumber: 192,
             columnNumber: 11
           }
         }), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -30288,18 +30278,18 @@ try {
                 __self: this,
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 222,
+                  lineNumber: 209,
                   columnNumber: 47
                 }
               })
             );
             return (
               /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
-                md: 8,
+                md: 1,
                 __self: this,
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 224,
+                  lineNumber: 211,
                   columnNumber: 17
                 }
               }, /*#__PURE__*/_reactDefault.default.createElement(_directorViewDirectorView.DirectorView, {
@@ -30309,7 +30299,7 @@ try {
                 __self: this,
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 225,
+                  lineNumber: 212,
                   columnNumber: 19
                 }
               }))
@@ -30318,7 +30308,7 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 219,
+            lineNumber: 206,
             columnNumber: 11
           }
         }), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -30330,18 +30320,18 @@ try {
                 __self: this,
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 239,
+                  lineNumber: 226,
                   columnNumber: 47
                 }
               })
             );
             return (
               /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
-                md: 8,
+                md: 1,
                 __self: this,
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 241,
+                  lineNumber: 228,
                   columnNumber: 17
                 }
               }, /*#__PURE__*/_reactDefault.default.createElement(_genreViewGenreView.GenreView, {
@@ -30351,7 +30341,7 @@ try {
                 __self: this,
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 242,
+                  lineNumber: 229,
                   columnNumber: 19
                 }
               }))
@@ -30360,7 +30350,7 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 236,
+            lineNumber: 223,
             columnNumber: 11
           }
         }), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -30370,14 +30360,14 @@ try {
             __self: this,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 256,
+              lineNumber: 243,
               columnNumber: 27
             }
           }),
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 253,
+            lineNumber: 240,
             columnNumber: 11
           }
         }), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -30388,14 +30378,14 @@ try {
             __self: this,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 261,
+              lineNumber: 248,
               columnNumber: 27
             }
           }),
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 258,
+            lineNumber: 245,
             columnNumber: 11
           }
         }), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -30406,7 +30396,7 @@ try {
                 __self: this,
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 266,
+                  lineNumber: 253,
                   columnNumber: 22
                 }
               })
@@ -30415,7 +30405,7 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 263,
+            lineNumber: 250,
             columnNumber: 11
           }
         })))
@@ -36680,7 +36670,6 @@ try {
       const {movie, onMovieClick} = this.props;
       return (
         /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrapCardDefault.default, {
-          border: "primary",
           style: {
             width: '18rem'
           },
@@ -36746,7 +36735,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","prop-types":"4dfy5","react-bootstrap/Button":"1ru0l","react-bootstrap/Card":"1CZWQ","react-router-dom":"1PMSK","./movie-card.scss":"7eJvr","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"1ru0l":[function(require,module,exports) {
+},{"react":"3b2NM","prop-types":"4dfy5","react-bootstrap/Button":"1ru0l","react-bootstrap/Card":"1CZWQ","react-router-dom":"1PMSK","./movie-card.scss":"43n4t","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"1ru0l":[function(require,module,exports) {
 "use strict";
 
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
@@ -37126,7 +37115,7 @@ CardImg.defaultProps = defaultProps;
 var _default = CardImg;
 exports.default = _default;
 module.exports = exports["default"];
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/extends":"3krLJ","@babel/runtime/helpers/objectWithoutPropertiesLoose":"3Yx9V","classnames":"5aJRc","react":"3b2NM","./ThemeProvider":"4rz1S"}],"7eJvr":[function() {},{}],"3X8QW":[function() {},{}],"6M7fu":[function(require,module,exports) {
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/extends":"3krLJ","@babel/runtime/helpers/objectWithoutPropertiesLoose":"3Yx9V","classnames":"5aJRc","react":"3b2NM","./ThemeProvider":"4rz1S"}],"43n4t":[function() {},{}],"3X8QW":[function() {},{}],"6M7fu":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -37166,6 +37155,7 @@ try {
     };
     return (
       /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrapFormDefault.default, {
+        className: "form-container",
         __self: this,
         __source: {
           fileName: _jsxFileName,
@@ -37243,7 +37233,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","react-bootstrap/Form":"6A5ko","react-bootstrap/Button":"1ru0l","axios":"7rA65","./login-view.scss":"6eQ1e","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"6eQ1e":[function() {},{}],"7gvH2":[function(require,module,exports) {
+},{"react":"3b2NM","react-bootstrap/Form":"6A5ko","react-bootstrap/Button":"1ru0l","axios":"7rA65","./login-view.scss":"3ueKO","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3ueKO":[function() {},{}],"7gvH2":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -37528,6 +37518,7 @@ try {
       const {movie, onBackClick} = this.props;
       return (
         /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "movie-view",
           __self: this,
           __source: {
             fileName: _jsxFileName,
@@ -37640,7 +37631,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","react-router-dom":"1PMSK","./movie-view.scss":"5xPJU","react-bootstrap":"4n7hB","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"5xPJU":[function() {},{}],"4n7hB":[function(require,module,exports) {
+},{"react":"3b2NM","react-router-dom":"1PMSK","./movie-view.scss":"4iZ2Z","react-bootstrap":"4n7hB","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"4iZ2Z":[function() {},{}],"4n7hB":[function(require,module,exports) {
 "use strict";
 
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
@@ -49835,7 +49826,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","react-router-dom":"1PMSK","prop-types":"4dfy5","react-bootstrap/Button":"1ru0l","react-bootstrap/Container":"3Mt3t","react-bootstrap/Col":"2D0r8","react-bootstrap/Row":"3fzwD","react-bootstrap/Card":"1CZWQ","./director-view.scss":"7vB1C","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"7vB1C":[function() {},{}],"6FLqj":[function(require,module,exports) {
+},{"react":"3b2NM","react-router-dom":"1PMSK","prop-types":"4dfy5","react-bootstrap/Button":"1ru0l","react-bootstrap/Container":"3Mt3t","react-bootstrap/Col":"2D0r8","react-bootstrap/Row":"3fzwD","react-bootstrap/Card":"1CZWQ","./director-view.scss":"4ddkX","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"4ddkX":[function() {},{}],"6FLqj":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -50401,7 +50392,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","prop-types":"4dfy5","react-bootstrap/Form":"6A5ko","react-bootstrap/Button":"1ru0l","react-bootstrap/Card":"1CZWQ","./profile-view.scss":"4yYME","react-bootstrap/Container":"3Mt3t","react-bootstrap/Col":"2D0r8","react-bootstrap/Row":"3fzwD","react-router-dom":"1PMSK","axios":"7rA65","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"4yYME":[function() {},{}],"5b5oY":[function(require,module,exports) {
+},{"react":"3b2NM","prop-types":"4dfy5","react-bootstrap/Form":"6A5ko","react-bootstrap/Button":"1ru0l","react-bootstrap/Card":"1CZWQ","./profile-view.scss":"3kYjk","react-bootstrap/Container":"3Mt3t","react-bootstrap/Col":"2D0r8","react-bootstrap/Row":"3fzwD","react-router-dom":"1PMSK","axios":"7rA65","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3kYjk":[function() {},{}],"5b5oY":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -50733,6 +50724,6 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","./about.scss":"163WD","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"163WD":[function() {},{}],"01gjd":[function() {},{}]},["1j6wU","68WUB","1DVjT"], "1DVjT", "parcelRequire279c")
+},{"react":"3b2NM","./about.scss":"4st58","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"4st58":[function() {},{}],"5iJih":[function() {},{}]},["1j6wU","1eyTa","1DVjT"], "1DVjT", "parcelRequire279c")
 
 //# sourceMappingURL=index.02675e63.js.map
