@@ -1,7 +1,6 @@
-.main-view {
+.movie-view {
     display: flex;
-    margin-top: 5rem;
-    gap: 1rem;
+    align-items: center;
     img {
             transition: transform .5s;
         }
@@ -10,3 +9,25 @@
         img:hover {
         transform: scale(1.1);
 }
+
+.movie-view-column {
+    height: 70%;
+    width: 30%;
+}
+
+.movie-view-button{
+    position: absolute;
+    margin-top: 9rem;
+    margin-left: 350px;
+    border: 2px solid;
+    color: grey;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    transition: .3s;
+    }
+
+.movie-view-button:hover{
+    // background: linear-gradient(90deg, var(--c1, #cc4b2c), var(--c2, #662616) 51%, var(--c1, #cc4b2c)) var(--x, 0)/ 200%;
+    // --x: 100%;
+}    
+

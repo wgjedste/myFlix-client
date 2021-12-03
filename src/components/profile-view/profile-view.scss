@@ -1,47 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
 
-:root{
-    --primary-color: white;
-    --secondary-color: rgb(0, 177, 0);
-    --box-color: rgb(108, 108, 108);
-    }
+:root {
+  --primary-color: white;
+  --box-color: rgb(108, 108, 108);
+  --box-color-delete: rgb(171, 0, 0);
+}
 
 body {
-    background-color: var(--primary-color);
-    font-family: 'EB Garamond', serif;
+  background-color: var(--primary-color);
 }
 
 .profile-view-container {
-    background-color: white;
-    width: 35%;
-    height: 50%;
-    display: flex;
-   }
-
-
-.profile-view-card {
-    width: 350px;
-    border: 1px solid var(--box-color);
-    text-align: center;
-    border-radius: 20px;
-} 
-
-
-
-.profile-view-button {
-    background-color: var(--box-color);
-    display: flex;
-    width: 350px;  
-    text-align: center; 
+  display: flex;
+  border: solid 1px var(--box-color);
+  border-radius: 10px;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.31);
+//   width: 35%;
+//   height: 50%;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
 }
 
+.profile-view-card {
+//   width: 350px;
+  border: 1px solid var(--box-color);
+  padding-left: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.profile-view-button {
+  background-color: var(--box-color-delete);
+  display: flex;
+  width: 350px;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.profile-view-button-delete {
+  background-color: var(--box-color-delete) !important;
+  margin-top: 0.5rem;
+}
 
 h3 {
-    display: inline-block;
-    border: 1px solid var(--box-color);
-    width: 350px;
-    text-align: center;
-    }
-
-
-
+  display: flex;
+  padding-bottom: 0.5rem;
+  // border: 1px solid var(--box-color);
+  width: 350px;
+  text-align: left;
+}

@@ -3,8 +3,8 @@
 .main-view {
   display: flex;
   margin-top: 5rem;
-  row-gap: 2rem;
-  column-gap: 2rem;
+  row-gap: 1rem;
+  column-gap: 1rem;
 }
 .main-view img {
   transition: transform 0.5s;
@@ -57,17 +57,32 @@ body {
   border-radius: 15px;
   justify-content: center;
 }
-.main-view {
+.movie-view {
   display: flex;
-  margin-top: 5rem;
-  gap: 1rem;
+  align-items: center;
 }
-.main-view img {
+.movie-view img {
   transition: transform 0.5s;
 }
 
 img:hover {
   transform: scale(1.1);
+}
+
+.movie-view-column {
+  height: 70%;
+  width: 30%;
+}
+
+.movie-view-button {
+  position: absolute;
+  margin-top: 9rem;
+  margin-left: 350px;
+  border: 2px solid;
+  color: grey;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
 }
 .movie-poster-director {
   vertical-align: middle;
@@ -80,36 +95,43 @@ img:hover {
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
 :root {
   --primary-color: white;
-  --secondary-color: rgb(0, 177, 0);
   --box-color: rgb(108, 108, 108);
+  --box-color-delete: rgb(171, 0, 0);
 }
 body {
   background-color: var(--primary-color);
-  font-family: "EB Garamond", serif;
 }
 .profile-view-container {
-  background-color: white;
-  width: 35%;
-  height: 50%;
   display: flex;
+  border: solid 1px var(--box-color);
+  border-radius: 10px;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.31);
+  margin-top: 2rem;
+  padding-bottom: 1rem;
 }
 .profile-view-card {
-  width: 350px;
   border: 1px solid var(--box-color);
+  padding-left: 1rem;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 5px;
+  margin-top: 1rem;
 }
 .profile-view-button {
-  background-color: var(--box-color);
+  background-color: var(--box-color-delete);
   display: flex;
   width: 350px;
   text-align: center;
+  margin-top: 0.5rem;
+}
+.profile-view-button-delete {
+  background-color: var(--box-color-delete) !important;
+  margin-top: 0.5rem;
 }
 h3 {
-  display: inline-block;
-  border: 1px solid var(--box-color);
+  display: flex;
+  padding-bottom: 0.5rem;
   width: 350px;
-  text-align: center;
+  text-align: left;
 }
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 .about-card {

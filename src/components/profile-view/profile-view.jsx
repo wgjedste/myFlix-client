@@ -60,7 +60,7 @@ export class ProfileView extends React.Component {
   //   removeFavorite(movie) {
   //     let token = localStorage.getItem("token");
   //     let url =
-  //       "https://my-flix-db-app.herokuapp.com/users/" +
+  //       "heroku" +
   //       localStorage.getItem("user") +
   //       "/favorites/" +
   //       movie._id;
@@ -94,11 +94,6 @@ export class ProfileView extends React.Component {
 
   render() {
     const { movies } = this.props;
-    // this.getUser(localStorage.getItem("token"));
-    // const favoriteMovieList = movies.filter((movie) => {
-    //   return this.state.favoriteMovies.includes(movie._id);
-    // });
-    // console.log(favoriteMovieList);
 
     if (!movies) alert("Please sign in");
     return (
@@ -124,17 +119,17 @@ export class ProfileView extends React.Component {
                 </Form.Group>
 
                 <Link to={`/update/${this.state.username}`}>
-                  <Button className="profile-view-button" variant="outline-light" type="link" size="sm" block>
+                  <Button className="profile-view-button" variant="outline-dark" type="link" size="sm" block>
                     Edit Profile
                   </Button>
                 </Link>
                 <Link to={`/`}>
-                  <Button className="profile-view-button" variant="outline-light" type="submit" size="sm" block>
+                  <Button className="profile-view-button" variant="outline-dark" type="submit" size="sm" block>
                     Back to Main
                   </Button>
                 </Link>
                 <Button
-                  className="profile-view-button"
+                  className="profile-view-button-delete"
                   variant="dark"
                   size="sm"
                   block
