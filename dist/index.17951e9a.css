@@ -109,6 +109,14 @@ body {
   margin-top: 2rem;
   padding-bottom: 1rem;
 }
+.profile-view-container:hover {
+  display: flex;
+  transition: transform 0.5s;
+  transform: scale(1.1);
+}
+.profile-view-container::after {
+  transition: transform 0.5s;
+}
 .profile-view-card {
   border: 1px solid var(--box-color);
   padding-left: 1rem;

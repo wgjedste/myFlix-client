@@ -21,6 +21,16 @@ body {
   padding-bottom: 1rem;
 }
 
+.profile-view-container:hover{
+  display: flex;
+  transition: transform .5s;
+  transform: scale(1.1);
+}
+
+.profile-view-container::after{
+  transition: transform .5s;
+}
+
 .profile-view-card {
 //   width: 350px;
   border: 1px solid var(--box-color);
